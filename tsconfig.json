@@ -20,11 +20,13 @@
   },
   "exclude": [
     "node_modules",
-    "api"
+    "api/**/*.ts"
   ],
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "pages/**/*.ts",
+    "pages/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx"
   ]
 }

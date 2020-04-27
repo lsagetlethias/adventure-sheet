@@ -16,6 +16,9 @@
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
     "@wynd/tslint-config-wynd": "^2.0.0",
+    "sass": "^1.26.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
     "tslint": "^6.1.2",
     "typescript": "^3.8.3"
   }
