@@ -1,3 +1,6 @@
 {
-    "extends": "@wynd/tslint-config-wynd"
+    "extends": "@wynd/tslint-config-wynd/react",
+    "rules": {
+        "no-default-export": false
+    }
 }
