@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import { NextPage } from 'next';
+import { NextPage, GetStaticProps } from 'next';
 import { Board } from '../components/Board';
 
 interface MainProps {
@@ -13,15 +13,15 @@ const Main: NextPage<MainProps> = ({ appName }) => {
             <Head>
                 <title>{appName}</title>
             </Head>
-            <h1>Main page</h1>
-            <Link href="/api/hello">
-                <a>Test Deno API</a>
-            </Link>
             <Board />
         </>
     );
 };
 
-Main.getInitialProps = async ctx => ({ appName: (await import('../package.json')).name });
+export const getStaticProps: GetStaticProps<MainProps> = async () => {
+    return {
+        props: { appName: 'YOLO' },
+    };
+};
 
 export default Main;
