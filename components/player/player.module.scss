@@ -1,11 +1,49 @@
 .player {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .stats {
-  border: 2px solid green;
+  display: flex;
+  flex: 1 1 auto;
+  padding: 0 0.5rem;
+
+  & > div {
+    border: 1px solid black;
+    flex: 1 1 auto;
+    margin: 0 0.5rem;
+  }
 }
 
 .bag {
-  border: 2px solid red;
+  display: grid;
+  flex: 3 3 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  gap: 1rem 1rem;
+  grid-template-areas: "Magic Gold" "Spells Items";
+  padding: 1rem;
+
+  .magic { grid-area: Magic; }
+  .gold { grid-area: Gold; }
+  .spells { grid-area: Spells; }
+  .items { grid-area: Items; }
+
+  &.no-magic {
+    display: flex;
+    flex-direction: column;
+
+    .gold {
+      flex: 0.7;
+      margin-bottom: 1rem;
+    }
+
+    .items {
+      flex: 1.3;
+    }
+  }
+
+  & > div {
+    border: 1px solid black;
+  }
 }

@@ -1,11 +1,21 @@
 import { FC } from 'react';
 import style from './player.module.scss';
+import cn from 'classnames';
 
+const magicEnabled = true;
 export const Bag: FC = () => (
-    <div className={style.bag}>
-        <div className="magic">Magic</div>
-        <div className="gold">Gold</div>
-        <div className="spells">Magic Spells</div>
-        <div className="items">Items</div>
+    <div
+        className={cn(style.bag, {
+            [style['no-magic']]: !magicEnabled,
+        })}
+    >
+        {magicEnabled && (
+            <>
+                <div className={style.magic}>Magic</div>
+                <div className={style.spells}>Magic Spells</div>
+            </>
+        )}
+        <div className={style.gold}>Gold</div>
+        <div className={style.items}>Items</div>
     </div>
 );

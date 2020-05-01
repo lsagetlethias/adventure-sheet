@@ -1,5 +1,23 @@
 .container {
-  border: 1px solid blue;
-  width: 80rem;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  width: 100rem;
+  height: calc(100vh - 2rem);
+  min-height: fit-content;
   margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    // display: block;
+  }
+
+  main {
+    display: flex;
+    flex: 1 1 auto;
+
+    & > * {
+      flex: 1 1 auto;
+    }
+  }
 }
