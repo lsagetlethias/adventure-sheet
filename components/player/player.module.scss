@@ -21,13 +21,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.7fr 1.3fr;
   gap: 1rem 1rem;
-  grid-template-areas: "Magic Gold" "Spells Items";
+  grid-template-areas: "pmagic pgold" "pspells pitems";
   padding: 1rem;
 
-  .magic { grid-area: Magic; }
-  .gold { grid-area: Gold; }
-  .spells { grid-area: Spells; }
-  .items { grid-area: Items; }
+  .magic { grid-area: pmagic; }
+  .gold { grid-area: pgold; }
+  .spells { grid-area: pspells; }
+  .items { grid-area: pitems; }
 
   &.no-magic {
     display: flex;

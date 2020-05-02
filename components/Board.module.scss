@@ -17,7 +17,11 @@
     display: flex;
     flex: 1 1 auto;
 
-    & > * {
+    & > *:first-child {
+      flex: 2 2 auto;
+    }
+
+    & > *:last-child {
       flex: 1 1 auto;
     }
   }
