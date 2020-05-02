@@ -1,0 +1,51 @@
+@import '../../styles/font';
+
+.counter {
+  > label {
+    @include font-text;
+  }
+
+  > div {
+    @include font-content;
+
+    font-size: 5rem;
+
+    input {
+      @include font-content;
+
+      background-color: transparent;
+      border: 0;
+      font-size: inherit;
+      max-width: 7rem;
+      text-align: center;
+
+      &.current {
+
+      }
+
+      &.total {
+
+      }
+    }
+  }
+
+  &:not(.inline) {
+    > div {
+      display: flex;
+
+      input {
+        flex: 1 1 auto;
+      }
+    }
+  }
+
+  &.inline {
+    display: flex;
+
+    > * {
+      flex: 1 1 auto;
+      justify-content: center;
+      vertical-align: middle;
+    }
+  }
+}

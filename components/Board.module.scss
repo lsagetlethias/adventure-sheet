@@ -1,27 +1,35 @@
+@import '../styles/font';
+
 .container {
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 0.3rem;
-  width: 100rem;
-  height: calc(100vh - 2rem);
-  min-height: fit-content;
-  margin: 1rem auto;
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 2rem);
+  margin: 1rem auto;
+  min-height: fit-content;
+  overflow-y: auto;
+  width: 100rem;
 
   header {
-    font-size: xx-large;
-    font-weight: bolder;
+    @include font-title;
+
+    margin: 0 1rem;
   }
 
   main {
     display: flex;
     flex: 1 1 auto;
 
-    & > *:first-child {
+    > * {
+      width: 50%;
+    }
+
+    > *:first-child {
       flex: 2 2 auto;
     }
 
-    & > *:last-child {
+    > *:last-child {
       flex: 1 1 auto;
     }
   }

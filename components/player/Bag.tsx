@@ -2,6 +2,7 @@ import { FC, useContext } from 'react';
 import style from './player.module.scss';
 import cn from 'classnames';
 import { LocaleContext } from '../../lib/localeContext';
+import { Counter } from '../utils/Counter';
 
 // TODO: magic
 const magicEnabled = true;
@@ -15,11 +16,11 @@ export const Bag: FC = () => {
         >
             {magicEnabled && (
                 <>
-                    <div className={style.magic}>{t['player.magic']}</div>
+                    <Counter inline className={style.magic} title={t['player.magic']} />
                     <div className={style.spells}>{t['player.spells']}</div>
                 </>
             )}
-            <div className={style.gold}>{t['player.gold']}</div>
+            <Counter inline className={style.gold} title={t['player.gold']} />
             <div className={style.items}>{t['player.items']}</div>
         </div>
     );

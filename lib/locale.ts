@@ -12,6 +12,7 @@ export const _default = {
     'player.gold': 'Gold',
     'monster.skill': 'Skill',
     'monster.stamina': 'Stamina',
+    'monster.name': 'Monster',
 };
 
 export type LocaleType = { readonly [lang in Lang]: Readonly<typeof _default> };
@@ -28,6 +29,7 @@ const Locale: LocaleType = {
         'player.gold': 'Or',
         'monster.skill': 'Habileté',
         'monster.stamina': 'Endurance',
+        'monster.name': 'Monstre',
     },
     en: _default,
 };
