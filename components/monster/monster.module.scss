@@ -1,5 +1,12 @@
 .monsterList {
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, calc(25% - 1rem));
+  grid-auto-rows: calc(25% - 1rem);
+  gap: 1rem 1rem;
+  padding: 0 1rem;
+  background-color: burlywood;
+  overflow-y: scroll;
 }
 
 .monsterItem {

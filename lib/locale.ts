@@ -6,6 +6,12 @@ export const _default = {
     'player.stamina': 'Stamina',
     'player.luck': 'Luck',
     adventureSheet: 'Adventure Sheet',
+    'player.magic': 'Magic',
+    'player.spells': 'Magic Spells',
+    'player.items': 'Items',
+    'player.gold': 'Gold',
+    'monster.skill': 'Skill',
+    'monster.stamina': 'Stamina',
 };
 
 export type LocaleType = { readonly [lang in Lang]: Readonly<typeof _default> };
@@ -16,6 +22,12 @@ const Locale: LocaleType = {
         'player.stamina': 'Endurance',
         'player.luck': 'Chance',
         adventureSheet: `Feuille d'Aventure`,
+        'player.magic': 'Magie',
+        'player.spells': 'Sortillèges',
+        'player.items': 'Inventaire',
+        'player.gold': 'Or',
+        'monster.skill': 'Habileté',
+        'monster.stamina': 'Endurance',
     },
     en: _default,
 };

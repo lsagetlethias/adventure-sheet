@@ -2,11 +2,12 @@ import { FC } from 'react';
 import { Monster } from './Monster';
 import style from './monster.module.scss';
 
-const monsters = ['Orc', 'Gobelin', 'Orc2', 'Kimera'];
+const monsters = Array<string>(30).fill('Monster');
 export const MonsterList: FC = () => (
     <div className={style.monsterList}>
+        <div className={style.monsterItem}>+</div>
         {monsters.map((m, idx) => (
-            <Monster key={idx} name={m} />
+            <Monster key={idx} name={`${m} n°${idx}`} />
         ))}
     </div>
 );
