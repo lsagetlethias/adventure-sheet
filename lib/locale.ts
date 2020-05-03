@@ -5,7 +5,7 @@ export const _default = {
     'player.skill': 'Skill',
     'player.stamina': 'Stamina',
     'player.luck': 'Luck',
-    adventureSheet: 'Adventure Sheet',
+    adventureSheet: 'Adventure__sheet)', // because "Barbarian" font
     'player.magic': 'Magic',
     'player.spells': 'Magic Spells',
     'player.items': 'Items',
@@ -22,7 +22,7 @@ const Locale: LocaleType = {
         'player.skill': 'Habileté',
         'player.stamina': 'Endurance',
         'player.luck': 'Chance',
-        adventureSheet: `Feuille d'Aventure`,
+        adventureSheet: `Feuille__d_aventure)`,
         'player.magic': 'Magie',
         'player.spells': 'Sortillèges',
         'player.items': 'Inventaire',

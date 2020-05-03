@@ -21,7 +21,7 @@ const Main: NextPage<MainProps> = ({ appName, lang }) => {
                 <title>{appName}</title>
             </Head>
             <LocaleProvider value={Locale[lang]}>
-                <Board />
+                <Board darkMode />
             </LocaleProvider>
         </>
     );
@@ -29,7 +29,7 @@ const Main: NextPage<MainProps> = ({ appName, lang }) => {
 
 export const getStaticProps: GetStaticProps<MainProps, MainQuery> = async ({ params }) => {
     return {
-        props: { appName: 'YOLO', lang: params?.lang ?? 'en' },
+        props: { appName: (await import('../../package.json')).name, lang: params?.lang ?? 'en' },
     };
 };
 

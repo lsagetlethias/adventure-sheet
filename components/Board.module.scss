@@ -11,6 +11,11 @@
   overflow-y: auto;
   width: 100rem;
 
+  &.dark-mode {
+    background-color: #222;
+    color: #ccc;
+  }
+
   header {
     @include font-title;
 
