@@ -1,9 +1,41 @@
-.container {
-  border: 1px solid blue;
-  width: auto;
-  height: 400px;
-}
+@import '../styles/font';
 
-.TOTO {
-  border: red;
+.container {
+  border: 2px solid #000;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 2rem);
+  margin: 1rem auto;
+  min-height: fit-content;
+  overflow-y: auto;
+  width: 100rem;
+
+  &.dark-mode {
+    background-color: #222;
+    color: #ccc;
+  }
+
+  header {
+    @include font-title;
+
+    margin: 0 1rem;
+  }
+
+  main {
+    display: flex;
+    flex: 1 1 auto;
+
+    > * {
+      width: 50%;
+    }
+
+    > *:first-child {
+      flex: 2 2 auto;
+    }
+
+    > *:last-child {
+      flex: 1 1 auto;
+    }
+  }
 }

@@ -1,0 +1,13 @@
+.monster-list {
+  display: grid;
+  gap: 1rem 1rem;
+  grid-auto-rows: calc(25% - 1rem);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, calc(25% - 1rem));
+  overflow-y: scroll;
+  padding: 0 1rem;
+}
+
+.monster-item {
+  border: 2px solid #f00;
+}

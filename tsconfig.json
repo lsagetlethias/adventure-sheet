@@ -24,9 +24,8 @@
   ],
   "include": [
     "next-env.d.ts",
-    "pages/**/*.ts",
-    "pages/**/*.tsx",
-    "components/**/*.ts",
-    "components/**/*.tsx"
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.scss"
   ]
 }

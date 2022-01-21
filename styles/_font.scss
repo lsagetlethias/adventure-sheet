@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Barbarian;
+  src: url('../public/font/Barbarian.ttf');
+}
+
+@font-face {
+  font-family: Adventure;
+  src: url('../public/font/Adventures\ &\ Overlanders.ttf');
+}
+
+@font-face {
+  font-family: Nintendo;
+  src: url('../public/font/Nintendo.ttf');
+}
+
+@mixin font-title {
+  font-family: Barbarian, sans-serif;
+  font-size: 5rem;
+}
+
+@mixin font-text {
+  font-family: Adventure, sans-serif;
+  font-size: 4.5rem;
+}
+
+@mixin font-content {
+  font-family: Nintendo, sans-serif;
+  font-size: 2rem;
+}

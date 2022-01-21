@@ -1,0 +1,49 @@
+.player {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats {
+  display: flex;
+  height: calc(25% - 1rem);
+  padding: 0 0.5rem;
+
+  > div {
+    border: 1px solid #000;
+    flex: 1 1 auto;
+    margin: 0 0.5rem;
+  }
+}
+
+.bag {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 1rem 1rem;
+  grid-template-areas: 'pmagic pgold' 'pspells pitems';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: calc(25% - 1rem) 1fr;
+  padding: 1rem;
+
+  .magic { grid-area: pmagic; }
+  .gold { grid-area: pgold; }
+  .spells { grid-area: pspells; }
+  .items { grid-area: pitems; }
+
+  &.no-magic {
+    display: flex;
+    flex-direction: column;
+
+    .gold {
+      height: calc(25% - 1rem);
+      margin-bottom: 1rem;
+    }
+
+    .items {
+      flex: 1 1 auto;
+    }
+  }
+
+  > div {
+    border: 1px solid #000;
+  }
+}

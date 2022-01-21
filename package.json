@@ -8,16 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.10",
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
     "@wynd/tslint-config-wynd": "^2.0.0",
     "sass": "^1.26.5",
     "stylelint": "^13.3.3",
+    "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-config-standard": "^20.0.0",
     "tslint": "^6.1.2",
     "typescript": "^3.8.3"
